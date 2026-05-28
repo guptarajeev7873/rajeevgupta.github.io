@@ -348,7 +348,7 @@
 <nav>
   <a href="#hero" class="nav-logo">RG<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
+    <li><a href="#links">Links</a></li><li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -367,8 +367,8 @@
     <p class="hero-title">IAM Engineer &amp; <span>Identity Security Specialist</span></p>
     <p class="hero-desc">I design and implement Identity &amp; Access Management solutions for enterprise environments — Active Directory, Microsoft Entra ID, Zero Trust architecture, and One Identity Manager. Based in Kolkata, India.</p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">↗ Get In Touch</a>
       <a href="https://identitydecoded.blogspot.com" target="_blank" class="btn-outline">✦ Read My Blog</a>
+      <button onclick="document.getElementById('links-drawer').classList.add('open')" class="btn-outline" style="border-color:rgba(0,194,212,.4);color:var(--teal);cursor:pointer;background:transparent;font-family:inherit;font-size:.9rem;font-weight:500;padding:14px 28px;border-radius:8px;border-width:1px;border-style:solid;">⚡ All Links</button>
     </div>
   </div>
   <div class="hero-stats">
@@ -385,6 +385,36 @@
       <div class="stat-label">Companies</div>
     </div>
   </div>
+</section>
+
+
+<!-- QUICK LINKS STRIP -->
+<section id="links" style="padding:50px 60px 20px;position:relative;z-index:1;">
+  <div class="section-label">Quick Links</div>
+  <div class="divider"></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+    <a href="https://identitydecoded.blogspot.com/2026/05/how-to-get-into-iam-india-career-guide.html" target="_blank" style="display:flex;align-items:center;gap:14px;background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;text-decoration:none;color:#fff;transition:all .2s;" onmouseover="this.style.borderColor='rgba(27,110,243,.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.3rem">✍️</span>
+      <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;">Identity Decoded Blog</div><div style="font-size:.75rem;color:#7A8FA6;margin-top:2px;">IAM Career Guide</div></div>
+    </a>
+    <a href="https://rajeevster2.gumroad.com/l/dgpipn" target="_blank" style="display:flex;align-items:center;gap:14px;background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;text-decoration:none;color:#fff;transition:all .2s;" onmouseover="this.style.borderColor='rgba(27,110,243,.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.3rem">📘</span>
+      <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;">IAM Roadmap Guide</div><div style="font-size:.75rem;color:#7A8FA6;margin-top:2px;">Rs. 499 · Gumroad</div></div>
+    </a>
+    <a href="https://www.linkedin.com/in/rajeev-gupta-56bb44142" target="_blank" style="display:flex;align-items:center;gap:14px;background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;text-decoration:none;color:#fff;transition:all .2s;" onmouseover="this.style.borderColor='rgba(27,110,243,.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.3rem">💼</span>
+      <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;">LinkedIn Profile</div><div style="font-size:.75rem;color:#7A8FA6;margin-top:2px;">Connect with me</div></div>
+    </a>
+    <div onclick="navigator.clipboard.writeText('+918777629394').then(()=>{document.getElementById('ct').textContent='Copied!';document.getElementById('ct').style.opacity=1;setTimeout(()=>document.getElementById('ct').style.opacity=0,2000)})" style="display:flex;align-items:center;gap:14px;background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;cursor:pointer;color:#fff;transition:all .2s;" onmouseover="this.style.borderColor='rgba(0,194,212,.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.3rem">📞</span>
+      <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;">+91 87776 29394</div><div style="font-size:.75rem;color:#7A8FA6;margin-top:2px;">Tap to copy</div></div>
+    </div>
+    <a href="mailto:guptarajeev7873@gmail.com" style="display:flex;align-items:center;gap:14px;background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;text-decoration:none;color:#fff;transition:all .2s;" onmouseover="this.style.borderColor='rgba(0,194,212,.4)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)';this.style.transform='translateY(0)'">
+      <span style="font-size:1.3rem">✉️</span>
+      <div><div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;">guptarajeev7873</div><div style="font-size:.75rem;color:#7A8FA6;margin-top:2px;">@gmail.com</div></div>
+    </a>
+  </div>
+  <div id="ct" style="text-align:center;margin-top:10px;font-size:.8rem;color:#00C2D4;opacity:0;transition:opacity .3s;"></div>
 </section>
 
 <!-- ABOUT -->
@@ -665,6 +695,19 @@
         Gumroad Store
       </a>
     </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;max-width:500px;margin-left:auto;margin-right:auto;">
+      <div onclick="navigator.clipboard.writeText('+918777629394').then(()=>{var t=document.getElementById('ct2');t.style.opacity=1;setTimeout(()=>t.style.opacity=0,2000)})" style="background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='rgba(0,194,212,.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)'">
+        <div style="font-size:.72rem;color:#7A8FA6;margin-bottom:4px;">📞 Phone / WhatsApp</div>
+        <div style="font-family:Syne,sans-serif;font-weight:700;font-size:.95rem;color:#fff;">+91 87776 29394</div>
+        <div style="font-size:.72rem;color:#00C2D4;margin-top:4px;">Tap to copy</div>
+      </div>
+      <a href="mailto:guptarajeev7873@gmail.com" style="background:#111D30;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;text-decoration:none;transition:all .2s;display:block;" onmouseover="this.style.borderColor='rgba(0,194,212,.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,.07)'">
+        <div style="font-size:.72rem;color:#7A8FA6;margin-bottom:4px;">✉️ Email</div>
+        <div style="font-family:Syne,sans-serif;font-weight:700;font-size:.88rem;color:#fff;">guptarajeev7873@gmail.com</div>
+        <div style="font-size:.72rem;color:#00C2D4;margin-top:4px;">Tap to email</div>
+      </a>
+    </div>
+    <div id="ct2" style="text-align:center;margin-top:10px;font-size:.8rem;color:#00C2D4;opacity:0;transition:opacity .3s;">Phone copied!</div>
   </div>
 </section>
 
@@ -683,5 +726,121 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
+
+<!-- LINKS DRAWER -->
+<style>
+.drawer-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  background: rgba(0,0,0,.7); backdrop-filter: blur(8px);
+  opacity: 0; pointer-events: none; transition: opacity .3s;
+}
+.drawer-overlay.open { opacity: 1; pointer-events: all; }
+.drawer {
+  position: fixed; right: 0; top: 0; bottom: 0; z-index: 1000;
+  width: 100%; max-width: 420px;
+  background: #0A1628;
+  border-left: 1px solid rgba(255,255,255,.08);
+  padding: 32px 28px;
+  transform: translateX(100%); transition: transform .35s cubic-bezier(.4,0,.2,1);
+  overflow-y: auto;
+}
+.drawer-overlay.open .drawer { transform: translateX(0); }
+.drawer-close {
+  position: absolute; top: 20px; right: 20px;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+  color: #fff; width: 36px; height: 36px; border-radius: 8px;
+  font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .2s;
+}
+.drawer-close:hover { background: rgba(255,255,255,.14); }
+.drawer-title {
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.4rem;
+  color: #fff; margin-bottom: 4px;
+}
+.drawer-sub { font-size: .85rem; color: #7A8FA6; margin-bottom: 28px; }
+.drawer-section { font-size: .68rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #7A8FA6; margin: 20px 0 10px; }
+.dlink {
+  display: flex; align-items: center; gap: 14px;
+  background: #111D30; border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px; padding: 14px 16px;
+  text-decoration: none; color: #fff; margin-bottom: 9px;
+  transition: all .2s;
+}
+.dlink:hover { border-color: rgba(27,110,243,.4); background: rgba(27,110,243,.08); transform: translateX(3px); }
+.dlink-icon { width: 38px; height: 38px; border-radius: 9px; background: rgba(255,255,255,.05);
+  display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+.dlink-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .88rem; }
+.dlink-desc { font-size: .75rem; color: #7A8FA6; margin-top: 1px; }
+.dlink-arr { margin-left: auto; color: #7A8FA6; font-size: .85rem; transition: transform .2s, color .2s; }
+.dlink:hover .dlink-arr { transform: translateX(3px); color: #00C2D4; }
+.contact-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+.ccard {
+  background: #111D30; border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px; padding: 13px 14px;
+  text-decoration: none; color: #fff; cursor: pointer;
+  transition: all .2s; display: block;
+}
+.ccard:hover { border-color: rgba(0,194,212,.3); background: rgba(0,194,212,.06); }
+.ccard-label { font-size: .68rem; color: #7A8FA6; margin-bottom: 3px; }
+.ccard-val { font-size: .8rem; font-weight: 500; }
+.copy-toast2 {
+  position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(80px);
+  background: #00C2D4; color: #08111F; font-weight: 600; font-size: .82rem;
+  padding: 10px 22px; border-radius: 100px; pointer-events: none; z-index: 9999;
+  transition: transform .3s, opacity .3s; opacity: 0;
+}
+.copy-toast2.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+</style>
+
+<div class="drawer-overlay" id="links-drawer" onclick="closeDrawer(event)">
+  <div class="drawer">
+    <button class="drawer-close" onclick="document.getElementById('links-drawer').classList.remove('open')">✕</button>
+    <div class="drawer-title">All Links</div>
+    <div class="drawer-sub">Everything in one place</div>
+
+    <div class="drawer-section">Work &amp; Content</div>
+    <a href="https://identitydecoded.blogspot.com/2026/05/how-to-get-into-iam-india-career-guide.html" target="_blank" class="dlink">
+      <div class="dlink-icon">✍️</div>
+      <div><div class="dlink-name">Identity Decoded — Blog</div><div class="dlink-desc">IAM career guide for Indian IT professionals</div></div>
+      <span class="dlink-arr">→</span>
+    </a>
+    <a href="https://rajeevster2.gumroad.com/l/dgpipn" target="_blank" class="dlink">
+      <div class="dlink-icon">📘</div>
+      <div><div class="dlink-name">IAM Career Roadmap — India 2026</div><div class="dlink-desc">Practitioner-written guide · Rs. 499</div></div>
+      <span class="dlink-arr">→</span>
+    </a>
+    <a href="https://www.linkedin.com/in/rajeev-gupta-56bb44142" target="_blank" class="dlink">
+      <div class="dlink-icon">💼</div>
+      <div><div class="dlink-name">LinkedIn Profile</div><div class="dlink-desc">10+ years in IAM · LTIMindtree · TCS · Capgemini</div></div>
+      <span class="dlink-arr">→</span>
+    </a>
+
+    <div class="drawer-section">Contact</div>
+    <div class="contact-row2">
+      <div class="ccard" onclick="copyVal('+918777629394','Phone copied!')">
+        <div class="ccard-label">📞 Phone / WhatsApp</div>
+        <div class="ccard-val">+91 87776 29394</div>
+      </div>
+      <a href="mailto:guptarajeev7873@gmail.com" class="ccard">
+        <div class="ccard-label">✉️ Email</div>
+        <div class="ccard-val">guptarajeev7873@gmail.com</div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="copy-toast2" id="toast2"></div>
+
+<script>
+function closeDrawer(e){ if(e.target===document.getElementById('links-drawer')) document.getElementById('links-drawer').classList.remove('open'); }
+function copyVal(text,msg){
+  navigator.clipboard.writeText(text).then(()=>{
+    const t=document.getElementById('toast2');
+    t.textContent=msg; t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2000);
+  });
+}
+</script>
+
 </body>
 </html>
